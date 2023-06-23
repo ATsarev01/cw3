@@ -70,8 +70,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
                         telegramBotService.sendMessage(
                                         user.id(),
                                         "Для планирования задачи отправьте ее в формате:" +
-                                                "\\n*01.01.2022 20:00 Сделать домашнюю работу*",
-                                ParseMode.MarkdownV2
+                                                "\\n*01.01.2022 20:00 Сделать домашнюю работу*"
                                 );
                     } else if (text != null && (matcher = PATTERN.matcher(text)).matches()) {
                         LocalDateTime dateTime = parse(matcher.group(1));
