@@ -8,3 +8,4 @@ CREATE TABLE IF NOT EXISTS notification_tasks
     message                 TEXT        NOT NULL,
     notification_date_time  TIMESTAMP NOT NULL
 );
+
